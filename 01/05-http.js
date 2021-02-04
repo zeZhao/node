@@ -21,7 +21,7 @@ const server = http.createServer((requst, response) => {
   } else {
     response.statusCode = 404
     response.setHeader('Content-Type', 'text/plain;charset=utf-8')
-    response.end('404 找不到页面')
+    response.end('404 找不到页面!!')
   }
   //   console.log('receive...')
   // response.end(`<h1>a response....</h1>`)
