@@ -1,0 +1,59 @@
+一、常用模块：核心、内置、第三方模块
+ 核心：buffer { alloc、form、write、contact、toString}用于处理二进制数据流
+ 内置：os、fs、path、http、event、不同install需要require
+
+二、流程控制：async await、promise、generater、callback
+
+OS（操作系统）
+os.EOL 返回行末标志
+os.arch() 返回电脑多少位
+os.constants 特定常量(包含错误码、进程信号等常用的操作系统特定的常量。 定义的特定常量在 OS 常量中描述。)
+os.cpus() 包含有关每个逻辑 CPU 内核的信息
+返回对象：{
+      model <string>
+      speed <number> 以兆赫兹为单位。
+      times <Object>
+      user <number> CPU 在用户模式下花费的毫秒数。
+      nice <number> CPU 在良好模式下花费的毫秒数。
+      sys <number> CPU 在系统模式下花费的毫秒数。
+      idle <number> CPU 在空闲模式下花费的毫秒数。
+      irq <number> CPU 在中断请求模式下花费的毫秒数。
+    }
+os.endianness()返回一个字符串，该字符串标识为其编译 Node.js 二进制文件的 CPU 的字节序。
+可能的值有， 'BE' 用于大端字节序， 'LE' 用于小端字节序。
+
+os.freemem()  以整数的形式返回空闲的系统内存量（以字节为单位）。
+
+os.getPriority([pid]) 返回由 pid 指定的进程的调度优先级。 如果未提供 pid 或者为 0，则返回当前进程的优先级。
+
+os.homedir()  返回当前用户的主目录的字符串路径。
+
+os.hostname() 以字符串的形式返回操作系统的主机名。
+
+os.loadavg()  返回一个数组，包含 1、5 和 15 分钟的平均负载。
+平均负载是系统活动性的测量，由操作系统计算得出，并表现为一个分数。
+平均负载是 UNIX 特定的概念。 在 Windows 上，其返回值始终为 [0, 0, 0]。
+
+os.networkInterfaces()  返回一个对象，该对象包含已分配了网络地址的网络接口。
+分配的网络地址的对象上可用的属性包括：
+  {
+    address <string> 分配的 IPv4 或 IPv6 地址。
+    netmask <string> IPv4 或 IPv6 的子网掩码。
+    family <string> IPv4 或 IPv6。
+    mac <string> 网络接口的 MAC 地址。
+    internal <boolean> 如果网络接口是不可远程访问的环回接口或类似接口，则为 true，否则为 false。
+    scopeid <number> 数值型的 IPv6 作用域 ID（仅当 family 为 IPv6 时指定）。
+    cidr <string> 以 CIDR 表示法分配的带有路由前缀的 IPv4 或 IPv6 地址。如果 netmask 无效，则此属性会被设为 null。
+  }
+
+os.platform() 返回标识操作系统平台的字符串
+
+os.release()  以字符串的形式返回操作系统。
+os.uptime()   返回系统的正常运行时间（以秒为单位）。
+
+
+
+fs(文件系统)
+
+path(文件路径)
+

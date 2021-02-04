@@ -1,0 +1,7 @@
+
+node基础
+1、node特性：非阻塞I/O、事件驱动
+2、与前端不同之处： js语法不变； 前端 BOM DOM ；后端 fs http buffer event os
+3、并发处理
+   多进程、多线程（java）、异步I/O（js、nginx）、协程（deno-go TS）
+4、nodemon 热更新
